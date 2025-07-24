@@ -1,0 +1,94 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+
+/* shared styles */
+ 
+.display-flex{
+    display: flex;
+}
+
+.text-color-dark{
+    color: #252432;
+}
+.text-color-one{
+    color: #8987A1;
+}
+
+.text-color-two{
+    color: #E95A08;
+}
+
+
+
+
+
+
+
+
+
+
+/* navbar styles */
+.navbar{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-links{
+    display: flex;
+    font-size: 18px;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+    .cart{
+        
+        height: 18px;
+        margin-right: 5px;
+    }
+
+
+/* banner  styles */
+.banner{
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1440px;
+}
+.banner-content{
+    margin-top: 100px;
+    min-width: 300px;
+}
+.banner-title{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.banner-description{
+    font-size: 22px;
+    max-width: 570px;
+}
+.banner-image{
+
+    
+    
+ 
+  
+
+}
