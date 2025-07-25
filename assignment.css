@@ -41,12 +41,15 @@
     align-items: center;
     
 }
+.hidden{
+    display: flex;
+}
 .nav-links{
     display: flex;
     font-size: 18px;
 }
 .nav-item{
-    list-style: none;
+
     margin-right: 30px;
 }
 
@@ -85,9 +88,6 @@
 .banner-description{
     font-size: 22px;
     max-width: 570px;
-}
-.banner-image{
-
 }
 
 /* Our_plants */
@@ -186,15 +186,10 @@ margin-bottom: 15px;
 .trusted-badge {
     position: absolute;
     margin-left: -200px;
-   width: 200px;{
+   width: 200px;
     
 }
-/* .trusted-badge {
-    position: absolute;
-    top: 0;
-    
-    width: 120px; */
-} 
+
 
 .Our_plants_contents{
     margin-top: 200px;
@@ -206,28 +201,61 @@ margin-bottom: 15px;
 }
 
 /* latest deal */
-.latest_deal_contents{
-    display: flex;
+
+.center{
+    text-align: center;
 }
-.cards{
-    margin-left: 100px;
-    margin-top: 150px;
+.latest_deal_contents {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deal_card,
+.deal {
+    position: relative;
+    margin: 0;
 
 }
-.deal_card{
-    height: 50%;
+
+.deal_card {
+    width: 320px;
+    height: 180px;
 }
-.offers{
-    justify-content: center;
-    align-items: center;
-     position: absolute;
-     color: white;
-   /* z-index: 2; */
-   padding: 20px;
-   box-sizing: 20px;
-   border: 10px solid #4b0707;
-   margin-bottom: 500px;
+
+.deal {
+    width: 600px;
+    height: 380px;
+    border-radius: 8px;
 }
+
+.deal_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.offers {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+     background: rgba(50, 47, 47, 0.3);
+    border-radius: 8px;
+    border: none;
+}
+
 /* join_us style */
 
 .join_us{
@@ -333,4 +361,119 @@ margin-bottom: 15px;
 .footer-right img{
     width: 24px;
     height: 24px;
+}
+
+/*  size device */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .hidden{
+        display: none;
+
+    }
+  .banner {
+        flex-direction: column;
+         width: 100%;
+         height: auto;
+         }
+    .banner-image {
+        order: -1; 
+       width: 100%;
+        height: 100%;
+        margin-left: -186px;
+    }
+    .banner-content {
+        margin-top: -15px;
+        
+    }
+
+    .product {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+        gap: 10px;
+    }
+    .trusted-badge{
+        display: none;
+
+    }
+    .flower_plants {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        order: -1;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .flower-store-image {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+    .Our_plants_contents {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .join_us {
+         width: 100%;
+        height: 300px;
+        
+    }
+    .join_us img {
+        width: 100%;
+        height: 100%;
+        margin-left: -20px;
+
+    }
+   .signup ,.join_us_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+
+    padding: 16px;
+
+   
+}
+   .latest_deal_contents {
+        flex-direction: column;
+        align-items: center;
+    }
+    .deal {
+        width: 100%;
+        height: 220px;
+    }
+    .deal_card {
+        width: 100%;
+        height: 140px;
+    }
+
+    .footer,
+    .footer-center {
+        flex-direction: column ;
+        align-items: center ;
+        width: 100%;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 0 ;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-center ul {
+        margin-bottom: 20px;
+        text-align: center;
+}
+.Column{
+    gap: 0px;
+}
+.footer-right{
+    margin-left: 10px;
+}
 }
