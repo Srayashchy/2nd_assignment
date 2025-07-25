@@ -166,52 +166,68 @@ margin-bottom: 15px;
 
 }
 
+
 /* FLOWER_PlANTS */
-.FLOWER_PlANTS{
-    width: 100%;
-    max-width: 1140px;
-    display: flex;
-    flex-direction: ;
-    align-items: center;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 60px auto;
-    padding:0 20px;
+.flower_plants{
+   display: flex;
+}
+.image {
+    position: relative;
+}
+
+.flower-store-image {
+    position: relative;
+    margin: 40px auto;
+    padding: 80px;
+    margin-left: 100px;
     box-sizing: border-box;
 }
-.FLOWER_PlANTS_image{
-    position: relative;
-    flex:  1 ;
-    min-width: 300px;
-    max-width: 50%;
-}
-.flower-store{
-    width: 100%;
-    height: auto;
-    display: block; 
 
+.trusted-badge {
+    position: absolute;
+    margin-left: -200px;
+   width: 200px;{
+    
 }
-.trusted-badge{
-     position: absolute;
+/* .trusted-badge {
+    position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   border-radius: 50%;
-   width: 120px;
-   height: 120px;
-   display: flex;
-   flex-direction: column;
-   justify-self: center;
-   text-align: center;
-   padding: 10px;
+    
+    width: 120px; */
+} 
 
-/* 
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: -100px;
-    margin-top: -100px; */
+.Our_plants_contents{
+    margin-top: 200px;
+}
+.Our_plants_description{
+    gap: 20px;
+    font-size: 20px;
+
 }
 
+/* latest deal */
+.latest_deal_contents{
+    display: flex;
+}
+.cards{
+    margin-left: 100px;
+    margin-top: 150px;
+
+}
+.deal_card{
+    height: 50%;
+}
+.offers{
+    justify-content: center;
+    align-items: center;
+     position: absolute;
+     color: white;
+   /* z-index: 2; */
+   padding: 20px;
+   box-sizing: 20px;
+   border: 10px solid #4b0707;
+   margin-bottom: 500px;
+}
 /* join_us style */
 
 .join_us{
